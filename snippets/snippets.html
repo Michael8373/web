@@ -1,0 +1,55 @@
+<!-- HTML: Phone Snippet -->
+<a href="tel:1-888-555-5555">1-888-555-5555</a>
+
+<!-- HTML: SMS Snippet -->
+<a href="sms:1-888-555-5555">Send Text Message</a>
+
+<!-- HTML: EMAIL Snippet -->
+<a href="mailto:me@mysite.com">Email Me</a>
+
+<!-- HTML Header: Prevent Search Engine Indexing -->
+<meta name="robots" content="noindex, nofollow"> <!-- Just for Google --> <meta name="googlebot" content="noindex, nofollow">
+
+<!-- HTML: Form to get Directions from Google Maps -->
+<form action="http://maps.google.com/maps" method="get" target="_blank">
+    <label for="saddr">Enter your location</label>
+    <input type="text" name="saddr" />
+    <input type="hidden" name="daddr" value="350 5th Ave New York, NY 10018 (Empire State Building)" />
+    <input type="submit" value="Get directions" />
+ </form>
+
+<!-- CSS: Full Body Background Image -->
+    body {
+        background-image: url('background.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+
+<!-- HTML: Create a responsive video embed using HTML and CSS: -->
+<div class="video-container">
+  <iframe src="https://www.youtube.com/embed/your_video_id" frameborder="0" allowfullscreen></iframe>
+</div>
+
+    <!--CSS:  Responsive Video  -->
+
+    .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    }
+
+    .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+   
+<!--HTML: Scrolling Text  -->
+<marquee>This text will scroll horizontally</marquee>
+<marquee direction="up">This text will scroll up</marquee>

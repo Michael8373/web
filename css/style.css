@@ -1,0 +1,114 @@
+/* Assignment 02 Stylesheet */
+
+body {
+    color: #111;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+
+    /* Background Image */
+    background-image: url(../images/sky01.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#wrapper {
+    z-index: 10;
+    margin: 20px auto 20px auto;
+    width: 1040px;
+    height: auto;
+
+    /* CSS Grid - Structure/Layout */
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5, 200px);
+    grid-auto-rows: 200px 75px auto 100px;
+    grid-template-areas: 
+        "a b b b b"
+        "c c c c c"
+        "d d d d d"
+        "e e e e e";
+}
+
+#a, #b, #c, #d, #e {
+    z-index: 20;
+    border: 1px solid #111;
+    background-color:whitesmoke;
+}
+
+#a {
+    grid-area: a;
+
+    img {
+        height: 100%;
+        
+    }
+}
+
+#b {
+    grid-area: b;
+
+    h1 {
+        font-size: 4em;
+        letter-spacing: 10px;
+        color: crimson;
+        font-variant: small-caps;
+    }
+}
+
+#c {
+    grid-area: c;
+
+    a {
+        font-size: 1.5em;
+        letter-spacing: 4px;
+        margin-right: 25px;
+    }
+}
+
+#d {
+    grid-area: d;
+    padding: 20px;
+
+    img {
+        width: 450px;
+        border: 1px solid #111;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
+
+    p {
+        font-size: 1.25em;
+        text-align: justify;
+        text-indent: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+#e {
+    grid-area: e;
+}
+
+/* Classes */
+
+.imgl {
+    float: left;
+    margin-right: 15px;
+}
+
+.imgr {
+    float: right;
+    margin-left: 15px;
+}
+
+.rmiddle {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.cmiddle {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
